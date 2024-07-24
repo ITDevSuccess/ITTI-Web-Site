@@ -13,6 +13,11 @@ export const routes: Routes = [
     component: ClientComponent,
     children: [
       {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full',
+      },
+      {
         path: 'home',
         component: HomeComponent,
       },
