@@ -8,7 +8,7 @@ import { HeaderAreaComponent } from '../../shared/header-area/header-area.compon
   imports: [RouterOutlet, HeaderAreaComponent],
   template: `
   <app-header-area />
-  <router-outlet> </router-outlet> `,
+    <router-outlet></router-outlet>`,
   styles: ``,
 })
 export class ClientComponent {}

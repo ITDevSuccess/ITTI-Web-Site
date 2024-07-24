@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="owl-service-item  owl-carousel owl-loaded owl-drag">
+            <div class="owl-service-item owl-carousel owl-loaded owl-drag">
               <app-items-carousel
                 *ngFor="let item of items"
                 [title]="item.title"

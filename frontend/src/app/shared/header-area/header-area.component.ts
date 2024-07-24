@@ -11,15 +11,17 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
         <div class="row">
           <div class="col-12">
             <nav class="main-nav">
-              <a routerLink="" class="logo">ITTI</a>
+              <a [routerLink]="['home']" routerLinkActive="active" class="logo"
+                >ITTI</a
+              >
               <ul class="nav">
-                <li class="scroll-to-section">
-                  <a routerLink="/client/home" routerLinkActive="active"
+                <li class="">
+                  <a [routerLink]="['home']" routerLinkActive="active"
                     >Accueil</a
                   >
                 </li>
                 <li>
-                  <a routerLink="/client/formation" routerLinkActive="active"
+                  <a [routerLink]="['formation']" routerLinkActive="active"
                     >Formations</a
                   >
                 </li>
