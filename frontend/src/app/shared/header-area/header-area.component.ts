@@ -14,13 +14,13 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
               <a routerLink="" class="logo">ITTI</a>
               <ul class="nav">
                 <li class="scroll-to-section">
-                  <a routerLink="#top" routerLinkActive="active">Accueil</a>
+                  <a routerLink="/client" routerLinkActive="active">Accueil</a>
                 </li>
                 <li>
-                  <a href="#top" class="active">Formations</a>
+                  <a routerLink="/formation" routerLinkActive="active">Formations</a>
                 </li>
                 <li class="scroll-to-section">
-                  <a routerLink="#contact" routerLinkActive="active"
+                  <a href="#contact"
                     >Contactez-nous</a
                   >
                 </li>
