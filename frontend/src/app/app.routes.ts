@@ -1,6 +1,9 @@
 import { Routes } from '@angular/router';
 import { ClientComponent } from './pages/client/client.component';
 import { HomeComponent } from './pages/client/pages/home/home.component';
+import { FormationComponent } from './pages/client/pages/formation/formation.component';
+import { DetailsComponent } from './pages/client/pages/formation/details.component';
+import { ListsComponent } from './pages/client/pages/formation/lists.component';
 
 export const routes: Routes = [
   {
@@ -20,6 +23,25 @@ export const routes: Routes = [
       {
         path: 'home',
         component: HomeComponent,
+      },
+      {
+        path: 'formation',
+        component: FormationComponent,
+        children: [
+          {
+            path: '',
+            redirectTo: 'lists',
+            pathMatch: 'full',
+          },
+          {
+            path: 'lists',
+            component: ListsComponent,
+          },
+          {
+            path: 'details/:uid',
+            component: DetailsComponent,
+          },
+        ],
       },
     ],
   },
